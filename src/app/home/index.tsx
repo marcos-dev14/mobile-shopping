@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Image } from 'react-native';
 
+import { Input } from '@/components/input';
 import { Button } from "@/components/button";
 
 import { styles } from './styles';
@@ -15,6 +16,7 @@ export function Home() {
         style={styles.logo}
       />
 
+      <Input placeholder="O que você precisa comprar?" />
       <Button title="Adicionar" />
     </View>
   );
